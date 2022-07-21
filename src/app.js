@@ -15,26 +15,27 @@ let when = [
   "during my lunch",
   "while I was praying"
 ];
-window.onload = function excuseGen(perpArr, actionArr, whatArr, whenArr) {
+window.onload = function() {
   //write your code here
+  function excuseGen(perpArr, actionArr, whatArr, whenArr) {
+    let randPerp = genRanNum(perpArr.length);
+    let myPerp = perpArr[randPerp];
+    console.log(myPerp);
 
-  let randPerp = genRanNum(perpArr.length);
-  let myPerp = perpArr[randPerp];
-  console.log(myPerp);
+    let randAction = genRanNum(actionArr.length);
+    let myAction = actionArr[randAction];
+    console.log(myAction);
 
-  let randAction = genRanNum(actionArr.length);
-  let myAction = actionArr[randAction];
-  console.log(myAction);
+    let randWhat = genRanNum(whatArr.length);
+    let myWhat = whatArr[randWhat];
+    console.log(myWhat);
 
-  let randWhat = genRanNum(whatArr.length);
-  let myWhat = whatArr[randWhat];
-  console.log(myWhat);
+    let randWhen = genRanNum(whenArr.length);
+    let myWhen = whenArr[randWhen];
+    console.log(myWhen);
 
-  let randWhen = genRanNum(whenArr.length);
-  let myWhen = whenArr[randWhen];
-  console.log(myWhen);
-
-  return "${myPerp} + ${myAction} + ${myWhat} + ${myWhen}";
+    return "${myPerp} + ${myAction} + ${myWhat} + ${myWhen}";
+  }
 };
 function genRanNum(max) {
   return Math.floor(Math.random() * max);
