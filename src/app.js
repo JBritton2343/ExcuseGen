@@ -33,7 +33,7 @@ function excuseGen(perpArr, actionArr, whatArr, whenArr) {
 
   let randWhen = genRanNum(whenArr.length);
   let myWhen = whenArr[randWhen];
-  console.log(mywhen);
+  console.log(myWhen);
 
   return "${myPerp} + ${myAction} + ${myWhat} + ${myWhen}";
 }
