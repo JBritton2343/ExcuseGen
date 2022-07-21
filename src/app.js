@@ -36,9 +36,9 @@ window.onload = function() {
 
     return "${myPerp} + ${myAction} + ${myWhat} + ${myWhen}";
   }
+  let myExcuse = excuseGen(perp, action, what, when);
+  console.log(myExcuse);
 };
 function genRanNum(max) {
   return Math.floor(Math.random() * max);
 }
-let myExcuse = excuseGen(perp, action, what, when);
-console.log(myExcuse);
