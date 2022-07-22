@@ -34,8 +34,9 @@ window.onload = function() {
     let myWhen = whenArr[randWhen];
     console.log(myWhen);
 
-    return "${myPerp} + ${myAction} + ${myWhat} + ${myWhen}";
+    return `${myPerp} + ${myAction} + ${myWhat} + ${myWhen}`;
   }
+
   let myExcuse = excuseGen(perp, action, what, when);
   console.log(myExcuse);
 };
