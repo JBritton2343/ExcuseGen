@@ -1,9 +1,6 @@
 /* eslint-disable */
-import "bootstrap";
-import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+
 
 let perp = ["the dog", "my grandma", "his turtle", "my bird"];
 let action = ["ate", "peed", "crushed", "broke"];
@@ -34,10 +31,11 @@ window.onload = function() {
     let myWhen = whenArr[randWhen];
     console.log(myWhen);
 
-    return `${myPerp} + ${myAction} + ${myWhat} + ${myWhen}`;
+    return `${myPerp}` + `${myAction}` + `${myWhat}` + `${myWhen}`;
   }
 
-  let myExcuse = excuseGen(perp, action, what, when);
+  let myExcuse = document.getElementById("myExcuse");
+  myExcuse.innerHTML=excuseGen(perp, action, what, when);
   console.log(myExcuse);
 };
 function genRanNum(max) {
